@@ -1,6 +1,6 @@
 {
-  "name": "Slider",
-  "package": "com.fliplet.slider",
+  "name": "Aon Slider",
+  "package": "com.fliplet.aonslider",
   "version": "1.0.0",
   "icon": "img/icon.png",
   "tags": ["type:component", "category:onboarding"],
