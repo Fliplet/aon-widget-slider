@@ -83,7 +83,7 @@
 }
 
 .swiper-wrapper {
-	margin: 44px 0;
+    margin: 0 0 44px;
 }
 
 .swiper-slide {
