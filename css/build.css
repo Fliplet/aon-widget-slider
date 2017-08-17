@@ -36,6 +36,7 @@
 .onboarding-content img {
 	max-width: 100%;
 	height: auto;
+	padding-bottom: 10px;
 }
 
 .ob-top-nav {
