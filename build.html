@@ -12,12 +12,14 @@
         <div class="swiper-slide" data-slider-id="{{id}}">
           {{#if title}}
             <h1>{{title}}</h1>
-          {{/if]} 
+          {{/if}} 
           {{#if description}}
-            <p>{{nl2br description}}</p>{{/if}} {{#if linkAction.action}}<input data-slide-button-id="{{id}}" type="button" class="btn btn-primary" value="{{#if linkLabel}}{{linkLabel}}{{else}}Continue{{/if}}" />
-          {{/if}}
+            <p>{{nl2br description}}</p>{{/if}} 
           {{#if imageConf}}
-            <img src="{{imageConf.url}}" /> 
+            <img src="{{imageConf.url}}" /><br>
+          {{/if}}
+           {{#if linkAction.action}}
+            <input data-slide-button-id="{{id}}" type="button" class="btn btn-primary" value="{{#if linkLabel}}{{linkLabel}}{{else}}Continue{{/if}}" />
           {{/if}}
         </div>
         {{/each}}
