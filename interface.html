@@ -51,6 +51,23 @@
                   </div>
                 </div>
 
+                <div class="form-group">
+                  <div class="col-sm-4 control-label">
+                    <label for="list-item-allowhtml-{{id}}">Enable HTML?</label>
+                    <span class="help-block">You will have to manually enter line breaks when this is enabled.</span>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="checkbox checkbox-icon">
+                      <input class="list-item-allowhtml" type="checkbox" id="list-item-allowhtml-{{id}}" value="true" {{#if allowHTML}}checked{{/if}}>
+                      <label for="list-item-allowhtml-{{id}}">
+                        <span class="check">
+                        <i class="fa fa-check">
+                        </i></span> Yes, please
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
 <div class="form-group">
                   <div class="col-sm-4 control-label">
                     <label for="list-item-image-{{id}}">Bottom image</label>
@@ -232,6 +249,21 @@
               <textarea class="form-control list-item-desc" id="list-item-desc-\{{id}}" name="list-item-desc-\{{id}}" placeholder="Enter description" rows="3"></textarea>
             </div>
           </div>
+
+      <div class="form-group">
+        <div class="col-sm-4 control-label">
+          <label for="list-item-allowhtml-\{{id}}">Enable HTML?</label>
+          <span class="help-block">You will have to manually enter line breaks when this is enabled.</span>
+        </div>
+        <div class="col-sm-8">
+          <div class="checkbox checkbox-icon">
+            <input class="list-item-allowhtml" type="checkbox" id="list-item-allowhtml-\{{id}}">
+            <label for="list-item-allowhtml-\{{id}}">
+              <span class="check"><i class="fa fa-check"></i></span> Yes, please
+            </label>
+          </div>
+        </div>
+      </div>
 
 <div class="form-group">
             <div class="col-sm-4 control-label">

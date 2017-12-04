@@ -352,6 +352,9 @@ var FlSlider = (function() {
         .on('keyup change blur paste', '.list-item-link-label', function() {
           debounceSave();
         })
+        .on('change', '.list-item-allowhtml', function() {
+          debounceSave();
+        })
         .on('click', '.expand-items', function() {
           var $panelCollapse = $('.panel-collapse.in');
           // Update accordionCollapsed if all panels are collapsed/expanded
@@ -374,6 +377,7 @@ var FlSlider = (function() {
           item.number = _this.listLength++;
           item.linkAction = null;
           item.description = "";
+          item.allowHTML = false;
           data.items.push(item);
 
           _this.addListItem(item);
@@ -443,6 +447,7 @@ function save(notifyComplete) {
     item.description = $('#list-item-desc-' + item.id).val();
     item.title = $('#list-item-title-' + item.id).val();
     item.linkLabel = $('#list-item-link-label-' + item.id).val();
+    item.allowHTML = $('#list-item-allowhtml-' + item.id + ':checked').val();
   });
 
   if (notifyComplete) {
