@@ -12,9 +12,14 @@
         <div class="swiper-slide" data-slider-id="{{id}}">
           {{#if title}}
             <h1>{{title}}</h1>
-          {{/if}} 
+          {{/if}}
           {{#if description}}
-            <p>{{nl2br description}}</p>{{/if}} 
+          	{{#if allowHTML}}
+            	<p>{{{description}}}</p>
+            {{else}}
+            	<p>{{nl2br description}}</p>
+	          {{/if}}
+          {{/if}} 
           {{#if imageConf}}
             <img src="{{imageConf.url}}" /><br>
           {{/if}}
