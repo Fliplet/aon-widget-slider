@@ -11,10 +11,10 @@
         {{#each items}}
         <div class="swiper-slide" data-slider-id="{{id}}">
           {{#if title}}
-            <h1>{{title}}</h1>
+            <h1>{{{title}}}</h1>
           {{/if}} 
           {{#if description}}
-            <p>{{nl2br description}}</p>{{/if}} 
+            <p>{{{nl2br description}}}</p>{{/if}} 
           {{#if imageConf}}
             <img src="{{imageConf.url}}" /><br>
           {{/if}}
