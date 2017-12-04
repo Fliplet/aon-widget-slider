@@ -3,7 +3,7 @@
   "package": "com.fliplet.aonslider",
   "version": "1.3.0",
   "icon": "img/icon.png",
-  "tags": [],
+  "tags": ["type:component", "category:onboarding"],
   "provider_only": false,
   "html_tag": "div",
   "providers": [
